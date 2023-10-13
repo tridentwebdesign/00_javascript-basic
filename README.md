@@ -3,7 +3,8 @@
 ## 授業内コード
 1. 10月5日（木）はじめの一歩
 2. 10月5日（木）GitHub リポジトリ作成
-3. 10月12日（木）文字列の連結、変数、定数、複合代入演算子、
+3. 10月12日（木）文字列の連結、変数、定数、複合代入演算子
+4. documentオブジェクトとDOM
 
 
 ## 10月12日
@@ -72,6 +73,51 @@ let n3 = 5;
 n3++; //インクリメント 1足す
 console.log(n3); //6
 ```
+
+## sample7-7
+
+```html
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sample7-7</title>
+  </head>
+  <body>
+    <h1>果物の種類</h1>
+    <ul id="fruitslist" class="listbox__list">
+      <li>りんご</li>
+      <li>みかん</li>
+      <li>バナナ</li>
+      <!-- <li>メロン</li> -->
+    </ul>
+    <!--リストを操作するDOM操作のスクリプト-->
+    <script>
+    //メロンを加えたい。
+    //ul要素を取り入れる。
+    const element = document.querySelector("ul");
+    console.log(element);
+
+    //selectorってCSSのセレクターなので、
+    const element2 = document.querySelector("#fruitslist");
+    console.log(element2);
+
+    //classもいける？→いける！
+    const element3 = document.querySelector(".listbox__list");
+    console.log(element3);
+
+    //新しい要素を作るli
+    const lilast = document.createElement("li");
+    console.dir(lilast); //dirに変更。オブジェクトの中身が見れる。
+    lilast.textContent = "メロン";
+    console.log(lilast);
+    </script>
+  </body>
+</html>
+```
+
+基本は、document.querySelector(セレクタ)とdocument.querySelectorAll(セレクタ)で良い。
 
 
 ## 10 月 5 日
