@@ -6,7 +6,7 @@
 3. 10月12日（木）文字列の連結、変数、定数、複合代入演算子
 4. documentオブジェクトとDOM
 
-※JavaScriptメモは、別ファイル[lesson.md](https://github.com/tridentwebdesign/00_javascript-basic/lesson.md)に収納
+※JavaScriptメモは、別ファイル[lesson.md](./lesson.md)に収納
 
 ## 10月12日
 
