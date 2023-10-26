@@ -5,8 +5,18 @@
 2. 10月5日（木）GitHub リポジトリ作成
 3. 10月12日（木）文字列の連結、変数、定数、複合代入演算子
 4. 10月19日（木）documentオブジェクトとDOM
+5. 10月26日（木）その他のdocumentの取得と挿入、イベント
 
 ※JavaScriptメモは、別ファイル[lesson.md](./lesson.md)に収納
+
+## 10月26日
+
+- getElementById,getElementsByClassName,getElementsByTagName
+- innerHTMLと複合代入演算子を使った要素の追加
+    - さらにテンプレートリテラルを使うと便利
+- addEventListner("イベント",function(){ 処理 });
+- element.setAttribute("属性名","属性値")
+    - これで、表示を切り替える
 
 
 ## 10月19日
