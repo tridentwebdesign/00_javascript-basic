@@ -6,8 +6,15 @@
 3. 10月12日（木）文字列の連結、変数、定数、複合代入演算子
 4. 10月19日（木）documentオブジェクトとDOM
 5. 10月26日（木）その他のdocumentの取得と挿入、イベント
+6. 11月2日（木）classListととにかくイベント
 
 ※JavaScriptメモは、別ファイル[lesson.md](./lesson.md)に収納
+
+## 11月2日
+
+- classList.add,classList.toggle,classList.remove,classList.contains
+- カウンターを使って配列を操作
+
 
 ## 10月26日
 
