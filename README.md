@@ -7,6 +7,7 @@
 4. 10月19日（木）documentオブジェクトとDOM
 5. 10月26日（木）その他のdocumentの取得と挿入、イベント
 6. 11月2日（木）classListととにかくイベント
+7. 11月9日（木）if文で条件分岐、左右まで
 
 ※JavaScriptメモは、別ファイル[lesson.md](./lesson.md)に収納
 
