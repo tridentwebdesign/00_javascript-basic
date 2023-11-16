@@ -42,14 +42,17 @@
         if(widthsize/2 >= event.clientX){
             //左半分
             console.log("左");
-            const list = document.createElement("li");
+            /* const list = document.createElement("li");
             list.textContent = "左";
-            leftArea.appendChild(list);
+            leftArea.appendChild(list); */
             //or
-            leftArea.insertAdjacentHTML("beforeend","<li>左</li>")
+            leftArea.insertAdjacentHTML("beforeend","<li>左</li>");
         }else{
             console.log("右");
-            rightArea.insertAdjacentHTML("beforeend","<li>右</li>")
+            rightArea.insertAdjacentHTML("beforeend","<li>右</li>");
+            /* const list = document.createElement("li");
+            list.textContent = "右";
+            rightArea.appendChild(list); */
         }
       
     });
