@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>無題ドキュメント</title>
+</head>
+
+<body>
+<h1 style="text-align: center;">48</h1>
+<button style="margin: auto; display: block;">レッツゴー</button>
+<script>
+const akbsites = ["https://www.akb48.co.jp/","https://www.ske48.co.jp/", "http://www.nmb48.com/", "http://www.hkt48.jp/"];
+document.querySelector("button").addEventListener("click",function(){
+//0〜３の数値
+const title = Math.floor(Math.random()* 4);
+//必要な要素を取得
+const h1Elm = document.querySelector("h1");
+const alink = document.createElement('a');
+//数値に1を足す
+alink.innerText = title + 1 ;
+
+//ここに記述します。
+	const groupNumber = title + 1;
+if (groupNumber >= 1 && groupNumber <= 4) {
+            alink.innerText = groupNumber;
+            alink.setAttribute('href', akbsites[groupNumber - 1]);
+            alink.setAttribute('target', '_blank'); // 新しいタブで開く（任意の設定）
+        } else {
+            alink.innerText = '無効な番号';
+        }
+//ここまで
+
+//h1の中身をノードで入れ替える
+h1Elm.replaceChildren(alink);
+})
+</script>
+</html>

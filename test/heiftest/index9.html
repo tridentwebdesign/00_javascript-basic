@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>無題ドキュメント</title>
+</head>
+
+<body>
+	
+<script>
+const age = Math.floor(Math.random()*100);
+let message;
+
+	//ここに記述
+  // ① 18歳未満の場合
+if (age < 18) {
+  message = "未成年";
+} else if (age >= 18 && age < 65) {
+  message = "成人";
+} else {
+  message = "シニア";
+}
+
+//ここまで
+console.log(`年齢: ${age} 歳, メッセージ: ${message}`);
+		
+</script>
+</body>
+</html>
