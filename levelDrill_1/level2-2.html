@@ -28,12 +28,22 @@ const sausage = document.querySelector("li");
 console.log(sausage.textContent);
 
 //ホットケーキをquerySelectorで取得しコンソールで表示
+const hotcake = document.querySelector(".hotcake");
+console.log(hotcake.textContent);
 
-//マックグリドルをquerySelectorで取得しコンソールで表示
+//マックグリドルソーセージをquerySelectorで取得しコンソールで表示
+const griddle = document.querySelector(".griddle");
+console.log(griddle.textContent);
 
 //ソーセージエッグマフィンをquerySelectorAll("li")で取得し、コンソールで表示
+const sausageEgg = document.querySelectorAll("li");
+console.log(sausageEgg[2].textContent);
 
 //class="griddle"をquerySelectorAllで取得し、for文で全てをコンソールで表示
+const griddleAll = document.querySelectorAll(".griddle");
+for (let i = 0; i < griddleAll.length; i++) {
+    console.log(griddleAll[i].textContent);
+}
 
 </script>
 </body>

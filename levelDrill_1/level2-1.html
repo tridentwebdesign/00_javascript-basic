@@ -28,12 +28,22 @@ const negiKimchi = document.querySelector("li");
 console.log(negiKimchi.textContent);
 
 //牛丼をquerySelectorで取得しコンソールで表示
+const gyudon = document.querySelector("li");
+console.log(gyudon.textContent);
 
 //おんたまねぎキムチ牛丼をquerySelectorで取得しコンソールで表示※nth-childを使う。
+const onnegiKimchi = document.querySelector("li:nth-child(2)");
+console.log(onnegiKimchi.textContent);
 
 //高菜明太マヨ牛丼をquerySelectorAll("li")で取得し、コンソールで表示
+const takanaMayo = document.querySelectorAll("li");
+console.log(takanaMayo[7].textContent);
 
 //class="negi"をquerySelectorAllで取得し、for文で全てをコンソールで表示
+const negi = document.querySelectorAll(".negi");
+for (let i = 0; i < negi.length; i++) {
+    console.log(negi[i].textContent);
+}
 
 </script>
 </body>
