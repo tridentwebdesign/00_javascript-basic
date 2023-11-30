@@ -53,6 +53,40 @@
 
     //上記の配列を使って、JavaScriptで最優秀選手賞と同じhtmlを作成し縦に並べてください。
     //for文を使って一気に作成してください。
+
+    for (let i = 0; i < name.length; i++) {
+        const card = document.createElement("div");
+        card.classList.add("card");
+        document.body.appendChild(card);
+
+        const imagearea = document.createElement("div");
+        imagearea.classList.add("imagearea");
+        card.appendChild(imagearea);
+
+        const img = document.createElement("img");
+        img.src = "images/" + images[i];
+        imagearea.appendChild(img);
+
+        const text = document.createElement("div");
+        text.classList.add("text");
+        card.appendChild(text);
+
+        const h2 = document.createElement("h2");
+        h2.textContent = name[i];
+        text.appendChild(h2);
+
+        const p1 = document.createElement("p");
+        p1.textContent = award[i];
+        text.appendChild(p1);
+
+        const p2 = document.createElement("p");
+        p2.textContent = team[i];
+        text.appendChild(p2);
+
+        const img2 = document.createElement("img");
+        img2.src = "images/" + logo[i];
+        text.appendChild(img2);
+    }
 </script>
 </body>
 </html>
