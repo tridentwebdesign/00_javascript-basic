@@ -1,6 +1,28 @@
-## 11月9日
+## 11 月 30 日
 
-if文（条件分岐）
+### 関数の定義
+
+```js
+//関数の定義
+function 関数名(引数1, 引数2, ...){
+  引数を使った処理
+}
+
+//関数式
+const 関数名 = function(引数1, 引数2, ...){
+  引数を使った処理
+}
+
+//関数名
+関数名
+
+//関数の実行
+関数名();
+```
+
+## 11 月 9 日
+
+if 文（条件分岐）
 
 文字どおり条件によってプログラムの流れを分岐させる処理です。  
 JavaScript では、if（イフ）文と switch（スイッチ）文が用意されています。
@@ -8,18 +30,23 @@ JavaScript では、if（イフ）文と switch（スイッチ）文が用意さ
 ```js
 if (条件式) {
   // 条件式で真（true）の場合に行う処理をここに書く
+} else if (条件式) {
+  // 条件式で真（true）の場合に行う処理をここに書く
+} else {
+  //条件式で偽（false）の場合に行う処理を書く。
 }
 ```
+
 ( )に中には、分岐させる条件を式で書きます。  
 式はその場ですぐ評価され、論理型の値（true/false）に置き換えられます。  
 そのため、式は===や>など比較演算子を使って書いてもいいですし、論理型の変数を直接書いても構いません。
 
-## 10月19日
+## 10 月 19 日
 
 - コレクション（配列）
-- 繰り返し処理（for文）
-    - 配列を使った複数要素の追加
-    - 要素の創出
+- 繰り返し処理（for 文）
+  - 配列を使った複数要素の追加
+  - 要素の創出
 
 ```html
 <h1>人気フルーツ一覧</h1>
@@ -37,7 +64,7 @@ if (条件式) {
   console.log(element);
 
   //fruitsの要素数文だけfor文で回す
-  for(let i = 0; i < fruits.length; i++){
+  for (let i = 0; i < fruits.length; i++) {
     //liを創出する
     const lilast = document.createElement("li");
     //liに値（果物→配列fruitsの中にある）を代入
@@ -50,14 +77,13 @@ if (条件式) {
 </script>
 ```
 
-
-## 10月12日
+## 10 月 12 日
 
 - リテラルと演算子
 - 文字列の連結
 - 変数と定数
 - 複合代入演算子
-- document.オブジェクトとDOMの途中まで
+- document.オブジェクトと DOM の途中まで
 
 ### 文字列の計算
 
@@ -66,7 +92,7 @@ if (条件式) {
 console.log("ABC" + "DEF"); //文字列 + 文字列
 console.log("円周率は" + 3.14 + "です。"); //文字列 + 数値
 console.log("計算結果：" + 123 + 456); //文字列 +　数値の計算
-console.log(123 + 456 + "となりました。") //数値の計算 + 文字列
+console.log(123 + 456 + "となりました。"); //数値の計算 + 文字列
 console.log("計算結果：" + (123 + 456)); //文字列 +　(数値の計算)
 console.log("2" - 1); //文字列 - 数値
 console.log("2" * 3); //文字列 - 数値
@@ -83,7 +109,7 @@ console.log(a);
 a = "Hello"; //値の再代入（文字列型）
 console.log(a);
 
-//let a = "World"; 
+//let a = "World";
 //変数の宣言と代入を同時に行っています。さらに再宣言なので、エラーとなります。
 ```
 
@@ -98,7 +124,6 @@ console.log(PI);
 //PI = 3.1415926535;
 //const PI;
 ```
-
 
 ### 複合代入演算子とインクリメント
 
@@ -139,31 +164,30 @@ console.log(n3); //6
     </ul>
     <!--リストを操作するDOM操作のスクリプト-->
     <script>
-    //メロンを加えたい。
-    //ul要素を取り入れる。
-    const element = document.querySelector("ul");
-    console.log(element);
+      //メロンを加えたい。
+      //ul要素を取り入れる。
+      const element = document.querySelector("ul");
+      console.log(element);
 
-    //selectorってCSSのセレクターなので、
-    const element2 = document.querySelector("#fruitslist");
-    console.log(element2);
+      //selectorってCSSのセレクターなので、
+      const element2 = document.querySelector("#fruitslist");
+      console.log(element2);
 
-    //classもいける？→いける！
-    const element3 = document.querySelector(".listbox__list");
-    console.log(element3);
+      //classもいける？→いける！
+      const element3 = document.querySelector(".listbox__list");
+      console.log(element3);
 
-    //新しい要素を作るli
-    const lilast = document.createElement("li");
-    console.dir(lilast); //dirに変更。オブジェクトの中身が見れる。
-    lilast.textContent = "メロン";
-    console.log(lilast);
+      //新しい要素を作るli
+      const lilast = document.createElement("li");
+      console.dir(lilast); //dirに変更。オブジェクトの中身が見れる。
+      lilast.textContent = "メロン";
+      console.log(lilast);
     </script>
   </body>
 </html>
 ```
 
-HTMLの要素の取得について基本は、document.querySelector(セレクタ)とdocument.querySelectorAll(セレクタ)で良い。
-
+HTML の要素の取得について基本は、document.querySelector(セレクタ)と document.querySelectorAll(セレクタ)で良い。
 
 ## 10 月 5 日
 
