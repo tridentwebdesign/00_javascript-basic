@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>関数</title>
+</head>
+<body>
+    <button class="lesserafim">ルセラフィムメンバー</button>
+    <button class="onepeace">麦わらの一味</button>
+    <div class="fnArea"></div>
+
+    <script>
+const member_list = ["チェウォン", "サクラ", "ユンジン", "カズハ", "ウンチェ"];
+const mugiwara_list = ["モンキー・D・ルフィ","ナミ","ロロノア・ゾロ","ヴィンスモーク・サンジ","ウソップ","トニートニー・チョッパー","ニコ・ロビン","フランキー","ブルック","ジンベエ",];
+
+const memberArea = document.querySelector(".fnArea");
+
+//.fnAreaに上記の配列の要素を<li>で追加する関数
+const memberPush = function(members){
+    //memberAreaにul,liで各メンバーを入れる。
+    console.log(members);
+    const ulElm = document.createElement("ul");
+    for(let i = 0; i < members.length; i++){
+        const liElm = document.createElement("li");
+        liElm.textContent = members[i];
+        console.log(liElm,ulElm);
+        ulElm.appendChild(liElm);
+    }
+    memberArea.innerHTML = "";
+    memberArea.appendChild(ulElm);
+}
+
+//関数の実行
+//memberPush(member_list); //LE SSERAFIM
+//memberPush(mugiwara_list); //麦わらの一味
+
+//ボタンをとる
+const lesserafimBtn = document.querySelector(".lesserafim");
+const onepeaceBtn = document.querySelector(".onepeace");
+
+lesserafimBtn.addEventListener("click",function(){
+    console.log("ルセラフィム");
+    memberPush(member_list);
+})
+
+onepeaceBtn.addEventListener("click",function(){
+    memberPush(mugiwara_list);
+})
+
+//引数1と引数2を足す、関数の定義
+const addition = function(a, b){
+    const c  = a + b ;
+    console.log(c); //出力を関数が決める
+}
+
+//関数の実行
+addition(10, 11);  //コンソールに21と表示される。
+addition(30, "6"); //306
+
+
+//戻り値のある関数の定義
+const addition2 = function(a, b){
+    const c = a * b
+    return c; //戻り値 ※値の出力を関数の外で行いたい。
+}
+
+//関数の実行
+const result = addition2(5, 5) //25
+console.log(result); //コンソールに25と表示される。
+
+
+
+</script>
+</body>
+</html>
