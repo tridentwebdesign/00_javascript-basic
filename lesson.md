@@ -1,3 +1,33 @@
+## 12 月 14 日
+
+### アロー関数
+
+```js
+const arrow = () => {
+  //関数の処理
+};
+```
+
+this は、使えない
+
+#### 引数がある場合
+
+```js
+const arrow = (引数) => {
+  //引数が使える
+};
+```
+
+### スライドショウ 2 秒後に動く
+
+```js
+//2秒で切り替わる
+const slideShow = function (func) {
+  setInterval(func, 2000);
+};
+slideShow(nextStep);
+```
+
 ## 12 月 7 日
 
 ### 関数式
