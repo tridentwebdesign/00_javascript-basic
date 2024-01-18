@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>サンプル4-16改</title>
+    <style>
+      table,
+      td,
+      th {
+        border: 1px solid #333;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>人気のフルーツ一覧</h1>
+    <ul></ul>
+    <script>
+      const fruits = ["りんご", "もも", "バナナ"];
+      const ul = document.querySelector("ul");
+      /*    for(let i = 0; i < fruits.length; i++){
+        const li = document.createElement("li");
+        li.innerHTML = fruits[i];
+        ul.appendChild(li);
+    } */
+
+      for (let name of fruits) {
+        console.log(name); //要素が1つずつ入ってくる。
+        const li = document.createElement("li");
+        li.innerHTML = name;
+        ul.appendChild(li);
+      }
+    </script>
+
+    <h1>数字を英語で表現する</h1>
+    <table class="table_nam">
+      <tr>
+        <th>数字</th>
+        <th>英語</th>
+      </tr>
+    </table>
+
+    <script>
+      const numbers = ["zero", "one", "two", "three", "four", "five"];
+      //table
+
+      const tableElm = document.querySelector("table");
+
+      for (let i = 0; i < numbers.length; i++) {
+        const trElm = document.createElement("tr");
+
+        const tdElem1 = document.createElement("td");
+        tdElem1.innerHTML = i;
+        trElm.appendChild(tdElem1);
+
+        const tdElem2 = document.createElement("td");
+        tdElem2.innerHTML = numbers[i];
+        trElm.appendChild(tdElem2);
+
+        tableElm.appendChild(trElm);
+      }
+    </script>
+  </body>
+</html>
