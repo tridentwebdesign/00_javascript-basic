@@ -14,8 +14,24 @@
 10. 12 月 7 日（木）関数、引数、戻り値、関数式、変数のスコープ
 11. 12 月 14 日（木）コールバック関数、アロー関数
 12. 1 月 11 日（木）フォームとオブジェクト
+13. 1 月 25 日（木）JSON と Date()
 
 ※JavaScript メモは、別ファイル[lesson.md](./lesson.md)に収納
+
+## 1 月 25 日（木）
+
+- JSON(JavaScript Object Notition)=JavaScript のオブジェクト記法
+- new Date で今の時間情報が取れる
+
+```js
+//ミリ秒を日、時間、分、秒に変換する
+const seconds = Math.floor(difference / 1000);
+const minutes = Math.floor(seconds / 60);
+const hours = Math.floor(minutes / 60);
+const days = Math.floor(hours / 24);
+
+console.log("進級展までの日数は" + days + "日です。");
+```
 
 ## 1 月 18 日（木）
 
