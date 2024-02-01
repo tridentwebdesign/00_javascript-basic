@@ -18,6 +18,11 @@
 
 ※JavaScript メモは、別ファイル[lesson.md](./lesson.md)に収納
 
+## 2 月 1 日（木）
+
+- オブジェクトにて、Chiikawa カード作成
+- 期末テスト
+
 ## 1 月 25 日（木）
 
 - JSON(JavaScript Object Notition)=JavaScript のオブジェクト記法

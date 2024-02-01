@@ -86,7 +86,9 @@
         console.log(chiikawas[i]);
         const dlElm = document.createElement("dl");
 
-        const dtElm = `<dt><span>第${chiikawas[i]["story"]}話</span>${chiikawas[i]["title"]}</dt>`; //テンプレートリテラル
+        const dtElm = `<dt><span>第${chiikawas[i]["story"]}話</span>${chiikawas[i]["title"]}</dt>
+        <dd><a href="https://www.youtube.com/watch?v=${chiikawas[i]["id"]}" target="_blank"><img src="./images/${chiikawas[i]["image"]}"></a></dd>
+        `; //テンプレートリテラル
 
         dlElm.innerHTML = dtElm;
         content.appendChild(dlElm);
